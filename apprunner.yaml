@@ -1,8 +1,0 @@
-version: 1.0
-runtime: corretto11
-build:
-  commands:
-    build:
-      - mvn --file ../.. clean package -DskipTests
-run:
-  command: cd ../.. && java -jar apps/app1/target/app1-1.0-SNAPSHOT.jar
